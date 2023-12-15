@@ -1,6 +1,8 @@
 
 import './App.css';
 import About from './about';
+import Books from './books';
+import Corusels from './clients';
 import Header from './header';
 import Header2 from './header2';
 import Home from './home';
@@ -14,6 +16,8 @@ function App() {
       <Home/>
       <Numbers/>
       <About/>
+      <Books/>
+      <Corusels/>
     </div>
   );
 }
