@@ -15,7 +15,7 @@ function Header() {
     console.log(isMatch)
     return (
         <React.Fragment>
-            <AppBar sx={{ backgroundColor: '#fff', mt:'73px', boxShadow:'none' }}>
+            <AppBar sx={{ backgroundColor: {md:'#fff', xs:'#222'}, mt:'73px', boxShadow:'none' }}>
                 <Toolbar>
                     {
                         isMatch ? (

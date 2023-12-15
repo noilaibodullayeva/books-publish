@@ -1,13 +1,13 @@
 import { IconButton, Paper, Box, InputBase } from "@mui/material"
 import React from "react";
-import { AppBar, Button, Tab, Tabs, Toolbar, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { AppBar, Toolbar, Typography, } from "@mui/material";
 import { Facebook, Instagram, Pinterest, Twitter, Search } from "@mui/icons-material";
 
 
 function Header2() {
     return (
         <React.Fragment>
-            <AppBar sx={{ backgroundColor: '#fff', boxShadow: 'none' }}>
+            <AppBar sx={{ backgroundColor: '#fff', boxShadow: 'none', display: 'flex',  }}>
                 <Toolbar>
                     <Box sx={styles.icons}>
                         <IconButton sx={styles.iconButtonn}>
@@ -32,7 +32,7 @@ function Header2() {
                     <Box sx={{ ml: 'auto' }}>
                         <Paper
                             component="form"
-                            sx={{ p: '2px 4px', display: { md: 'flex', xs: 'none' }, alignItems: 'center', width: 400, borderRadius: '40px' }}
+                            sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 400, borderRadius: '40px' }}
                         >
                             <InputBase
                                 sx={{ ml: 1, flex: 1, color: '#222' }}
@@ -43,17 +43,6 @@ function Header2() {
                                 <Search />
                             </IconButton>
                         </Paper>
-                        <IconButton type="button"
-                            sx={{
-                                p: '7px',
-                                background: '#95ADBD',
-                                ml: "auto",
-                                display: { md: 'none', xs: 'block' },
-                                "&:hover": { background: '#95ADBD', }
-                            }}
-                            aria-label="search">
-                            <Search />
-                        </IconButton>
                     </Box>
                 </Toolbar>
             </AppBar>
@@ -65,7 +54,7 @@ export default Header2
 
 const styles = {
     icons: {
-        display: { md: 'flex', xs: 'none' },
+        display: 'flex',
         flexDirection: 'row',
         gap: '7px',
         marginLeft: '2%'

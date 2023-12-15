@@ -27,7 +27,7 @@ function Drawercomponent() {
 
                 </List>
             </Drawer>
-            <IconButton sx={{ color: 'black', mt:'-27%' }} onClick={() => setOpenDrawer(!openDrawer)}>
+            <IconButton sx={{ color: {md:'black', xs:'#fff'}, }} onClick={() => setOpenDrawer(!openDrawer)}>
                 <Menu />
             </IconButton>
         </React.Fragment>

@@ -1,6 +1,7 @@
-import { Box, Button, Typography } from "@mui/material"
+import { Box, Button, IconButton, Typography } from "@mui/material"
 import React from "react"
 import bgImage from "../images/bg_1.jpg.webp"
+import { BedroomBaby, Business, Diversity2, HistoryEdu } from "@mui/icons-material"
 function Home() {
     return (
         <React.Fragment>
@@ -14,6 +15,41 @@ function Home() {
                     </Typography>
                     <Button variant='standard' sx={styles.button1}>View All Books</Button>
                     <Button variant='standard' sx={styles.button2}>Explore now</Button>
+                </Box>
+                <Box sx={{
+                    display: 'flex',
+                    flexDirection: { md: 'row', xs: 'column' },
+                    justifyContent: 'center',
+                    margin: { md: '80px 200px 0 200px', xs:'1000px 0 0 0' },
+                }}>
+                    <Box sx={styles.iconBox}>
+                        <IconButton sx={styles.iconbutton}>
+                            <BedroomBaby sx={styles.iconbusi} />
+                        </IconButton>
+                        <Typography sx={styles.children}>Children's book</Typography>
+                        <Typography sx={styles.loremm}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium quos quia repellendus ipsa officiis id fuga!</Typography>
+                    </Box>
+                    <Box sx={styles.iconBox}>
+                        <IconButton sx={styles.iconbutton}>
+                            <Diversity2 sx={styles.iconbusi} />
+                        </IconButton>
+                        <Typography sx={styles.children}>Romance</Typography>
+                        <Typography sx={styles.loremm}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium quos quia repellendus ipsa officiis id fuga!</Typography>
+                    </Box>
+                    <Box sx={styles.iconBox}>
+                        <IconButton sx={styles.iconbutton}>
+                            <Business sx={styles.iconbusi} />
+                        </IconButton>
+                        <Typography sx={styles.children}>Art&Architecture</Typography>
+                        <Typography sx={styles.loremm}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium quos quia repellendus ipsa officiis id fuga!</Typography>
+                    </Box>
+                    <Box sx={styles.iconBox}>
+                        <IconButton sx={styles.iconbutton}>
+                            <HistoryEdu sx={styles.iconbusi} />
+                        </IconButton>
+                        <Typography sx={styles.children}>History</Typography>
+                        <Typography sx={styles.loremm}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium quos quia repellendus ipsa officiis id fuga!</Typography>
+                    </Box>
                 </Box>
             </Box>
         </React.Fragment>
@@ -32,17 +68,18 @@ const styles = {
         height: '730px',
         backgroundSize: "cover",
         marginTop: 0,
-        backgroundPositionY: 1,
+        backgroundPosition: { xs: 'center' },
         justifyContent: 'center',
     },
     typos: {
-        ml: { md: '200px', sm:'5%', xs: '3%' }
+        ml: { md: '200px', sm: '5%', xs: '3%' },
+        mt: '500px'
     },
     books: {
-        fontSize: {md:'60px', xs:'30px'},
+        fontSize: { md: '60px', xs: '30px' },
         fontFamily: 'Roboto',
         color: '#020202',
-        width: '700px',
+        width: { md: '700px', xs: 'auto' },
         fontWeight: 'bold',
         lineHeight: '-5'
     },
@@ -55,23 +92,60 @@ const styles = {
         background: '#95ADBD',
         color: '#fff',
         marginTop: '20px',
-        height: '60px',
-        width: '170px',
+        height: { md: '60px', xs: '40px' },
+        width: { md: '170px', xs: '120px' },
         "&:hover": {
             background: '#95ADBD',
             color: '#fff',
-        }
+        },
+        fontSize: { md: '15px', xs: '10px' }
     },
     button2: {
         background: '#fff',
         color: '#95ADBD',
         ml: '1%',
         marginTop: '20px',
-        height: '60px',
-        width: '170px',
+        height: { md: '60px', xs: '40px' },
+        width: { md: '170px', xs: '120px' },
         "&:hover": {
             background: '#fff',
             color: '#95ADBD',
-        }
+        },
+        fontSize: { md: '15px', xs: '10px' }
     },
+    iconBox: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        textAlign: 'center',
+        alignItems:'center'
+    },
+    iconbutton: {
+        width: '120px',
+        height: '120px',
+        borderRadius: '50%',
+        background: '#F5F4F0',
+        textAlign: 'center',
+        "&:hover": {
+            background: '#F5F4F0',
+        },
+        verticalAlign:'center'
+    },
+    iconbusi: {
+        fontSize: '3rem',
+        padding: '2rem',
+        color: '#161616'
+    },
+    children: {
+        fontSize: '20px',
+        fontFamily: 'Roboto',
+        fontWeight: 'bold',
+        m: '4% 0 0 0',
+    },
+    loremm:{
+        fontSize: '16px',
+        fontFamily: 'Roboto',
+        m: '4% 0 0 0',
+        color:'#9D9D9D'
+    }
 }
