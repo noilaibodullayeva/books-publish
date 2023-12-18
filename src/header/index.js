@@ -1,7 +1,5 @@
-import { AppBar, Button, Tab, Tabs, Toolbar, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { AppBar, Tab, Tabs, Toolbar, useMediaQuery, useTheme } from "@mui/material";
 import React, { useState } from "react";
-import { ShoppingCartRounded } from "@mui/icons-material";
-import DrawerComp from "./Drawercomponent";
 import Drawercomponent from "./Drawercomponent";
 
 const Pages = ["Home", "About", "Coming Soon", "Top seller", "Books", "Author", "Blog", "Contact"]

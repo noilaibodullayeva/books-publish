@@ -7,7 +7,7 @@ import { Facebook, Instagram, Pinterest, Twitter, Search } from "@mui/icons-mate
 function Header2() {
     return (
         <React.Fragment>
-            <AppBar sx={{ backgroundColor: '#fff', boxShadow: 'none', display: 'flex',  }}>
+            <AppBar sx={{ backgroundColor: '#fff', boxShadow: 'none', display: 'flex',  flexDirection:{xs:'column' }, justifyContent:{xs:'center'} }}>
                 <Toolbar>
                     <Box sx={styles.icons}>
                         <IconButton sx={styles.iconButtonn}>

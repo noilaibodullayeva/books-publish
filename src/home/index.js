@@ -20,7 +20,7 @@ function Home() {
                     display: 'flex',
                     flexDirection: { md: 'row', xs: 'column' },
                     justifyContent: 'center',
-                    margin: { md: '80px 200px 0 200px', xs:'1000px 0 0 0' },
+                    margin: { md: '80px 200px 0 200px', xs:'1300px 0 0 0' },
                 }}>
                     <Box sx={styles.iconBox}>
                         <IconButton sx={styles.iconbutton}>
@@ -73,7 +73,7 @@ const styles = {
     },
     typos: {
         ml: { md: '200px', sm: '5%', xs: '3%' },
-        mt: '500px'
+        mt: {md:'500px', xs:'0'}
     },
     books: {
         fontSize: { md: '60px', xs: '30px' },
