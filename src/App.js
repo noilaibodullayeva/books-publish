@@ -1,6 +1,7 @@
 
 import './App.css';
 import About from './about';
+import Blog from './blog';
 import Books from './books';
 import Corusels from './clients';
 import Header from './header';
@@ -18,6 +19,7 @@ function App() {
       <About/>
       <Books/>
       <Corusels/>
+      <Blog/>
     </div>
   );
 }
