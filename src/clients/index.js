@@ -43,7 +43,7 @@ function Clients() {
                             </IconButton>
                             <Typography sx={styles.lorem}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis magnam qui recusandae iure sequi id perspiciatis reprehenderit eaque quisquam suscipit.</Typography>
                             <Box sx={styles.reviewImg}>
-                                <img src={Img12} style={{ width: '70px', height: '70px', borderRadius: '50%' }}  alt='img'/>
+                                <img src={Img12} style={{ width: '70px', height: '70px', borderRadius: '50%',  }}  alt='img'/>
                                 <Typography sx={styles.ism}>Roger Scott <Typography sx={styles.kasb}>Marketing Manager</Typography></Typography>
                             </Box>
                         </Box>

@@ -4,6 +4,7 @@ import About from './about';
 import Blog from './blog';
 import Books from './books';
 import Corusels from './clients';
+import Footer from './footer';
 import Header from './header';
 import Header2 from './header2';
 import Home from './home';
@@ -20,6 +21,7 @@ function App() {
       <Books/>
       <Corusels/>
       <Blog/>
+      <Footer/>
     </div>
   );
 }

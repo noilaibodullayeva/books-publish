@@ -12,7 +12,7 @@ function Blog() {
                 <Typography sx={styles.kinds}>Kinds Words From Clients</Typography>
                 <Box sx={styles.boxBlog}>
                     <Box sx={styles.box1Blog}>
-                        <img src={Img16} alt="..." style={{ width: '100%', height: '200px', zIndex: '600', position:'relative' }} />
+                        <img src={Img16} alt="..." style={{ width: '100%', height: '200px', zIndex: '600', position:'relative', objectFit: 'cover' }} />
                         <Box sx={styles.circle}>
                             <Typography sx={styles.sana}>02</Typography>
                             <Typography sx={styles.oy}>MAY</Typography>
@@ -22,7 +22,7 @@ function Blog() {
                         <Typography sx={styles.lorem}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci maxime perspiciatis amet et? Perferendis sed non accusamus aspernatur vitae.</Typography>
                     </Box>
                     <Box sx={styles.box1Blog}>
-                        <img src={Img17} alt="..." style={{ width: '100%', height: '200px', zIndex: '-1', }} />
+                        <img src={Img17} alt="..." style={{ width: '100%', height: '200px', zIndex: '600', position:'relative', objectFit: 'cover'}} />
                         <Box sx={styles.circle}>
                             <Typography sx={styles.sana}>02</Typography>
                             <Typography sx={styles.oy}>MAY</Typography>
@@ -32,7 +32,7 @@ function Blog() {
                         <Typography sx={styles.lorem}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci maxime perspiciatis amet et? Perferendis sed non accusamus aspernatur vitae.</Typography>
                     </Box>
                     <Box sx={styles.box1Blog}>
-                        <img src={Img18} alt="..." style={{ width: '100%', height: '200px', zIndex: '-1', }} />
+                        <img src={Img18} alt="..." style={{ width: '100%', height: '200px', zIndex: '600', position:'relative', objectFit: 'cover' }} />
                         <Box sx={styles.circle}>
                             <Typography sx={styles.sana}>02</Typography>
                             <Typography sx={styles.oy}>MAY</Typography>

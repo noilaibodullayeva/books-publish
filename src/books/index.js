@@ -154,6 +154,7 @@ const styles = {
         flexDirection: { md: 'row', sm: 'column', xs: 'column' },
         justifyContent: 'center',
         width: '100%',
+        height:'auto'
     },
     BookWork: {
         background: '#F5F4F0',
