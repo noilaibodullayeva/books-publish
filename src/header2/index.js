@@ -12,7 +12,6 @@ function Header2() {
                     backgroundColor: '#fff',
                     boxShadow: 'none',
                     display: 'flex',
-                    flexDirection: { md: 'row', xs: 'column' },
                     justifyContent: 'space'
                 }}>
                     <Toolbar>
@@ -39,7 +38,7 @@ function Header2() {
                         <Box sx={{ ml: 'auto' }}>
                             <Paper
                                 component="form"
-                                sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 400, borderRadius: '40px' }}
+                                sx={{ p: '2px 4px', display: {md:'flex', xs:'none'}, alignItems: 'center', width: 400, borderRadius: '40px' }}
                             >
                                 <InputBase
                                     sx={{ ml: 1, flex: 1, color: '#222' }}
@@ -49,6 +48,7 @@ function Header2() {
                                 <IconButton type="button" sx={{ p: '10px', background: '#95ADBD', mr: 0, "&:hover": { background: '#95ADBD', } }} aria-label="search">
                                     <Search />
                                 </IconButton>
+                                <Search sx={{ p: '10px', background: '#95ADBD', mr: 0, "&:hover": { background: '#95ADBD', }, display:{md:'none', xs:'block'} }}/>
                             </Paper>
                         </Box>
                     </Toolbar>
@@ -63,7 +63,7 @@ export default Header2
 
 const styles = {
     icons: {
-        display: 'flex',
+        display: {md:'flex', xs:'none'},
         flexDirection: 'row',
         gap: '7px',
         marginLeft: '2%'
