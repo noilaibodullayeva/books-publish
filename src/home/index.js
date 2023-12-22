@@ -95,8 +95,8 @@ const styles = {
         height: { md: '60px', xs: '40px' },
         width: { md: '170px', xs: '120px' },
         "&:hover": {
-            background: '#95ADBD',
-            color: '#fff',
+            background: '#fff',
+            color: '#95ADBD',
         },
         fontSize: { md: '15px', xs: '10px' }
     },
@@ -108,8 +108,8 @@ const styles = {
         height: { md: '60px', xs: '40px' },
         width: { md: '170px', xs: '120px' },
         "&:hover": {
-            background: '#fff',
-            color: '#95ADBD',
+            background: '#95ADBD',
+            color: '#fff',
         },
         fontSize: { md: '15px', xs: '10px' }
     },
