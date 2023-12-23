@@ -81,7 +81,8 @@ const styles = {
         color: '#020202',
         width: { md: '700px', xs: 'auto' },
         fontWeight: 'bold',
-        lineHeight: '-5'
+        lineHeight: '-5',
+        mt:0,
     },
     river: {
         fontSize: '16px',

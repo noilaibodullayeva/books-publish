@@ -73,13 +73,14 @@ export default Footer
 
 const styles = {
     boxFooter: {
-        display: 'flex',
+        display: {md:'flex', xs:'grid'},
         flexDirection:{md:'row', xs:'column'},
         justifyContent:'center',
         gap: '30px',
         m: { md: '8% 5% 0 5%' , xs: '3%' },
         pt:'5%',
-        pb:'3%'
+        pb:'3%',
+        gridTemplateColumns: {xs:'repeat(auto-fit, minmax(40%, 1fr))'},
     },
     bocFooter: {
         mt: '5%',

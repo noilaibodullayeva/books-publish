@@ -43,7 +43,7 @@ const styles = {
         m: { md: '3% 0 3% 200px', xs: '0 0 0 2%' }
     },
     aboutWord: {
-        m: { md: '6% 200px 3% 0', xs: '0 2% 3% 0' }
+        m: { md: '6% 200px 3% 0', xs: '0 2% 1% 2%' }
     },
     publish: {
         color: '#FF7B5D',
