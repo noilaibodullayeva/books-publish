@@ -61,14 +61,14 @@ const styles = {
     clientsbg: {
         background: {md:`url(${Img13})`, xs:'none'},
         width: '100%',
-        backgroundRepeat: "no-repeat",
         display: 'flex',
         flexDirection: 'column',
         height: '500px',
         backgroundSize: "cover",
         marginTop: 0,
-        backgroundPosition: 'center',
+        backgroundPosition: 'bottom',
         justifyContent: 'center',
+        backgroundRepeat:'no-repeat'
     },
     testi: {
         color: '#FF7B5D',

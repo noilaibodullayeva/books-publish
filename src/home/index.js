@@ -68,7 +68,7 @@ const styles = {
         height: '730px',
         backgroundSize: "cover",
         marginTop: 0,
-        backgroundPosition: 'center',
+        backgroundPosition: 'top',
         justifyContent: 'center',
     },
     typos: {
