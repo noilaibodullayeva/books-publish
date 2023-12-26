@@ -4,7 +4,7 @@ import React from "react"
 import Img10 from "../images/person_1.jpg.webp"
 import Img11 from "../images/person_2.jpg.webp"
 import Img12 from "../images/person_3.jpg.webp"
-import Img13 from "../images/bg_4.jpg.webp"
+import Img13 from "../images/Screenshot_1.png"
 
 
 function Clients() {
@@ -64,11 +64,16 @@ const styles = {
         display: 'flex',
         flexDirection: 'column',
         height: '500px',
-        backgroundSize: "cover",
+        backgroundSize: 'cover',
         marginTop: 0,
-        backgroundPosition: 'bottom',
+        overflow: 'hidden',
         justifyContent: 'center',
-        backgroundRepeat:'no-repeat'
+         backgroundRepeat  : 'no-repeat',
+       backgroundPosition: 'center',
+        backgroundImage: {
+            flex: 1,
+            resizeMode: 'cover', // or 'stretch'
+        },
     },
     testi: {
         color: '#FF7B5D',
