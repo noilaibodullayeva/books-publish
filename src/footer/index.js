@@ -8,8 +8,8 @@ function Footer() {
         <React.Fragment>
             <Box sx={{
                 background: '#1A1A1A',
-                height: {md:'400px', xs:'auto'},
-                width:'100%'
+                height: { md: '400px', xs: 'auto' },
+                width: '100%'
             }}>
                 <Box sx={styles.boxFooter}>
                     <Box sx={styles.bocFooter}>
@@ -55,14 +55,7 @@ function Footer() {
                         <Typography sx={styles.typolink}><Telegram />info@yourdemain.com</Typography>
                     </Box>
                 </Box>
-                <Box sx={{
-                background: '#000000',
-                height: {md:'120px', xs:'auto'},
-                width:'100%',
-                mt:'0'
-            }}>
-                    <Typography sx={styles.resived}>Copyright 2023 All rights reserved | This template is made with 🖤 by<Typography sx={styles.miss}>Colorib.com</Typography> </Typography>
-                </Box>
+                <Typography sx={styles.resived}>Copyright 2023 All rights reserved | This template is made with 🖤 by<Typography sx={styles.miss}>Colorib.com</Typography> </Typography>
             </Box>
 
         </React.Fragment>
@@ -73,18 +66,18 @@ export default Footer
 
 const styles = {
     boxFooter: {
-        display: {md:'flex', xs:'grid'},
-        flexDirection:{md:'row', xs:'column'},
-        justifyContent:'center',
+        display: { md: 'flex', xs: 'grid' },
+        flexDirection: { md: 'row', xs: 'column' },
+        justifyContent: 'center',
         gap: '30px',
-        m: { md: '8% 5% 0 5%' , xs: '3%' },
-        pt:'5%',
-        pb:'3%',
-        gridTemplateColumns: {xs:'repeat(auto-fit, minmax(40%, 1fr))'},
+        m: { md: '8% 5% 0 5%', xs: '3%' },
+        pt: '5%',
+        pb: '3%',
+        gridTemplateColumns: { xs: 'repeat(auto-fit, minmax(40%, 1fr))' },
     },
     bocFooter: {
         mt: '5%',
-        gap:'2%'
+        gap: '2%'
     },
     stilSoz: {
         fontSize: '25px',
@@ -95,7 +88,7 @@ const styles = {
         fontSize: '17px',
         color: '#FFFFFF',
         mb: '1%',
-        width:'200px'
+        width: '200px'
     },
     icons: {
         display: 'flex',
@@ -121,28 +114,32 @@ const styles = {
         flexDirection: 'row',
         m: '5px'
     },
-     typolink1: {
+    typolink1: {
         color: '#E4E4E4',
         fontSize: '17px',
         display: 'flex',
         flexDirection: 'row',
         m: '5px',
-        width:'200px'
+        width: '200px'
     },
-     resived: {
-            fontSize: '1.2rem',
-            color: '#808080',
-            fontWeight: 'lighter',
-            padding: '1.5rem',
-            textTransform: 'lowercase',
-            display: 'flex',
-            flexDirection: 'row',
-            textAlign:'center',
-            justifyContent:'center'
-        },
-        miss: {
-            color: '#fff',
-            fontSize:'1.2rem',
-            padding:'0 1.5px'
-        }
+    resived: {
+        fontSize: '1.2rem',
+        color: '#808080',
+        fontWeight: 'lighter',
+        padding: '1.5rem',
+        textTransform: 'lowercase',
+        display: 'flex',
+        flexDirection: 'row',
+        textAlign: 'center',
+        justifyContent: 'center',
+        background: '#000000',
+        height: 'auto',
+        width: '100%',
+        mt: '0'
+    },
+    miss: {
+        color: '#fff',
+        fontSize: '1.2rem',
+        padding: '0 1.5px'
+    }
 }

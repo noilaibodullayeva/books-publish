@@ -63,9 +63,9 @@ const styles = {
         width: '100%',
         display: 'flex',
         flexDirection: 'column',
-        height: '500px',
+        height: '400px',
         backgroundSize: 'cover',
-        marginTop: 0,
+        marginTop: {md:0, xs:'500px'},
         overflow: 'hidden',
         justifyContent: 'center',
          backgroundRepeat  : 'no-repeat',
@@ -93,7 +93,9 @@ const styles = {
         gridTemplateColumns: 'repeat(auto-fit, minmax(22rem, 1fr))',
         gap: '25px',
         m: { md: '10% 12% 0 12%', xs: '3%' },
-        justifyContent: 'left'
+        justifyContent: 'left',
+        zIndex:'1000',
+        height:'250px'
     },
     reviewImg: {
         display: 'flex',
