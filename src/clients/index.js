@@ -83,11 +83,6 @@ const styles = {
         overflow: 'hidden',
         justifyContent: 'center',
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        backgroundImage: {
-            flex: 1,
-            resizeMode: 'cover', // or 'stretch'
-        },
         position:'relative'
 
     },
