@@ -8,8 +8,8 @@ function Blog() {
     return (
         <React.Fragment>
             <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                <Typography sx={styles.testi}>TESTIMONIALS</Typography>
-                <Typography sx={styles.kinds}>Kinds Words From Clients</Typography>
+                <Typography sx={styles.testi}>BLOG</Typography>
+                <Typography sx={styles.kinds}>Recent Blog</Typography>
                 <Box sx={styles.boxBlog}>
                     <Box sx={styles.box1Blog}>
                         <img src={Img16} alt="..." style={{ width: '100%', height: '200px', zIndex: '600', position:'relative', objectFit: 'cover' }} />

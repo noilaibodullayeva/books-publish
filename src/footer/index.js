@@ -8,7 +8,7 @@ function Footer() {
         <React.Fragment>
             <Box sx={{
                 background: '#1A1A1A',
-                height: { md: '400px', xs: 'auto' },
+                height: { md: '100%',},
                 width: '100%'
             }}>
                 <Box sx={styles.boxFooter}>
