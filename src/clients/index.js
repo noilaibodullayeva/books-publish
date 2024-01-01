@@ -5,7 +5,7 @@ import Img10 from "../images/person_1.jpg.webp"
 import Img11 from "../images/person_2.jpg.webp"
 import Img12 from "../images/person_3.jpg.webp"
 import Img13 from "../images/Screenshot_1.png"
-// import './App.css';
+import "./clients.css"
 
 
 
@@ -13,15 +13,8 @@ function Clients() {
     return (
         <React.Fragment>
 
-            <Box sx={styles.clientsbg} class='bg'>
+            <Box sx={styles.clientsbg} className="bg">
                 <Box>
-                    {/* <Box sx={{
-                        backgroundColor: '#A6B9C8',
-                        height: '800px',
-                        width: '100%',
-                        opacity: '0.5',
-                        mt: '-15%'
-                    }} > */}
                         <Box sx={{
                             pt: { md: '260px', xs: '500px' }
                         }}>
@@ -61,7 +54,6 @@ function Clients() {
                             </Box>
                         </Box>
                     </Box>
-                {/* </Box> */}
 
 
             </Box>
@@ -73,27 +65,26 @@ export default Clients
 
 const styles = {
     clientsbg: {
-        background: { md: `url(${Img13})`, xs: 'none' },
-        width: '100%',
+        // backgroundImage: { md: `url(${Img13})`, xs: 'none' },
+        // width: '100%',
         display: 'flex',
         flexDirection: 'column',
-        height: '400px',
-        backgroundSize: 'cover',
+        // height: '400px',
+        // backgroundSize: 'cover',
         marginTop: { md: 0, xs: '500px' },
         overflow: 'hidden',
         justifyContent: 'center',
-        backgroundRepeat: 'no-repeat',
-        position:'relative'
-
+        // backgroundRepeat: 'no-repeat',
+        // position:'relative',
     },
     testi: {
-        color: '#fff',
+        color: '#000',
         fontSize: { md: '15px', xs: '18px' },
         textAlign: 'center',
         letterSpacing: 3,
     },
     kinds: {
-        color: { md: '#fff', xs: '#222' },
+        color: { md: '#000', xs: '#222' },
         textAlign: 'center',
         fontSize: { md: '40px', xs: '50px' },
         fontFamily: 'Monoscape'
